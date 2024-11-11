@@ -11,19 +11,14 @@ body {
 }
 
 #foto-perfil {
-    width: 400px; 
-    height: 300px; 
+    width: 320px; 
+    height: 250px; 
     object-fit: cover; 
     border-radius: 15px;
+    border: 5px solid #34495e;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
     transition: transform 0.5s ease, opacity 0.5s ease, width 0.3s ease, height 0.3s ease;
-}
-
-#foto-perfil:hover {
-    transform: scale(1.1);
-    opacity: 1;
-    width: 470px; 
-    height: 330px; 
+    animation: fadeInUp 1s ease-out;
 }
 
 @keyframes fadeInUp {
@@ -35,10 +30,6 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-#foto-perfil {
-    animation: fadeInUp 1s ease-out;
 }
 
 @media (max-width: 768px) {
@@ -327,3 +318,4 @@ p {
         padding: 40px 0;
     }
 }
+
