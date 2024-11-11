@@ -6,53 +6,173 @@
     <title>Portfólio Acadêmico</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Nícolas Fernandes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contatos</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Nícolas Fernandes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Sobre mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cursos">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section class="home">
-        <div class="container py-5">
-            <h1><img src="icon.png" alt="Ícone" style="width: 30px; vertical-align: middle;"> </h1>
-            <h1 class="text-center text-white">Hey, i'm Nícolas</h1>
-            <p class="text-center text-white">Eu estou estudando análise e desenvolvimento de sistemas na Fatec.</p>
-        </div>
-    </section>
+    <main>
+<section id="home" class="home">
+    <div class="container py-5 text-center">
+        <h1 class="text-white" data-aos="fade-up">Hey, I'm Nícolas</h1>
+        <img id="foto-perfil" src="imagens/WhatsApp Image 2024-11-10 at 21.07.28.jpeg" alt="Foto de Perfil">
+        <p class="text-white" data-aos="fade-up">Meu nome é Nícolas Fernandes, tenho 21 anos e sou de São José dos Campos. Estudo Análise e Desenvolvimento de Sistemas na Fatec desde 2024. Tenho uma grande paixão por tecnologia e programação, e estou me dedicando a aprimorar minhas habilidades para me tornar um profissional qualificado na área. Ao longo da minha trajetória, venho desenvolvendo projetos que refletem meu aprendizado e evolução, e neste portfólio, apresento um pouco sobre minha jornada e as conquistas até aqui.</p>
+    </div>
+</section>
 
-    <section id="projetos" class="projetos">
-        <div class="container py-5">
-            <h2 class="text-center text-white">Projetos</h2>
-            <p class="text-center text-white">Confira os projetos acadêmicos que desenvolvi ao longo do curso.</p>
-        </div>
-    </section>
+        <section id="projetos" class="projetos">
+            <div class="container py-5">
+                <h2 class="text-center text-white" data-aos="fade-up">Projetos</h2>
+                <p class="text-center text-white" data-aos="fade-up">Confira os projetos acadêmicos que desenvolvi ao longo do curso.</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col" data-aos="flip-left">
+                        <div class="card h-100 shadow-lg">
+                            <img src="imagens/library-5612441_1280.jpg" class="card-img-top" alt="Projeto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Universidade</h5>
+                                <p class="card-text">Este foi o meu primeiro projeto, um site simples para a Universidade Internacional, uma instituição fictícia. O site possui três páginas principais: Home, Sobre e Contato, com o objetivo de apresentar a universidade de forma clara e acessível. Foi uma experiência de aprendizado importante, focada em praticar os conceitos de desenvolvimento web e criar uma interface responsiva.</p>
+                                <a href="https://site-universidade-amber.vercel.app/" class="btn btn-primary">Visitar Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="flip-left">
+                        <div class="card h-100 shadow-lg">
+                            <img src="imagens/golden-retriever-4025683_1280.jpg" class="card-img-top" alt="Projeto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Adoção de Cachorros</h5>
+                                <p class="card-text">Este foi um projeto de desenvolvimento de um site de adoção de cachorros, criado utilizando o Bootstrap. O objetivo do site era facilitar a adoção responsável, apresentando informações sobre os cães disponíveis para adoção de forma simples e direta. O projeto permitiu aplicar conceitos de design responsivo e usabilidade, além de aprimorar habilidades no uso do Bootstrap para criar um layout funcional e acessível.</p>
+                                <a href="https://sitedeado-o.vercel.app/" class="btn btn-primary">Visitar Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="flip-left">
+                        <div class="card h-100 shadow-lg">
+                            <img src="imagens/istockphoto-1964517021-1024x1024.jpg" class="card-img-top" alt="Projeto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Quiz</h5>
+                                <p class="card-text">Esse foi um projeto desenvolvido para aplicar um quiz simples, com o objetivo de aprender e praticar os conceitos de JavaScript. A implementação foi realizada no contexto de um projeto universitário, onde o quiz foi integrado para proporcionar uma interação dinâmica ao usuário, com perguntas e respostas.</p>
+                                <a href="https://quiz-simples.vercel.app/" class="btn btn-primary">Visitar Projeto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cursos" class="cursos">
+            <div class="container py-5">
+                <h2 class="text-center text-white" data-aos="fade-up">Cursos</h2>
+                <p class="text-center text-white" data-aos="fade-up">Confira os cursos e certificações que concluí.</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col" data-aos="flip-up">
+                        <div class="card h-100 shadow-lg">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso de Desenvolvimento Web</h5>
+                                <p class="card-text">Curso focado em HTML, CSS e JavaScript, abrangendo conceitos básicos e avançados para construção de sites responsivos.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <small class="text-muted">Concluído em Junho de 2023</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="flip-up">
+                        <div class="card h-100 shadow-lg">
+                            <div class="card-body">
+                                <h5 class="card-title">Certificação em Data Science</h5>
+                                <p class="card-text">Curso intensivo sobre análise de dados, Python, e machine learning, voltado para aplicações práticas no mercado.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <small class="text-muted">Concluído em Setembro de 2023</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="flip-up">
+                        <div class="card h-100 shadow-lg">
+                            <div class="card-body">
+                                <h5 class="card-title">Curso de Design UX/UI</h5>
+                                <p class="card-text">Capacitação em design de interfaces e experiência do usuário, abordando ferramentas como Figma e conceitos de acessibilidade.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <small class="text-muted">Concluído em Novembro de 2023</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contato" class="contato">
-        <div class="container py-5">
-            <h2 class="text-center text-white">Contato</h2>
-            <p class="text-center text-white">Você pode entrar em contato comigo através do formulário ou pelas redes sociais.</p>
-        </div>
-    </section>
+        <section id="contato" class="contato">
+            <div class="container py-5">
+                <h2 class="text-center text-white" data-aos="fade-up">Contato</h2>
+                <p class="text-center text-white" data-aos="fade-up">Você pode entrar em contato comigo através dos seguintes canais:</p>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4" data-aos="fade-up">
+                        <div class="card text-center p-4 mb-4 shadow-lg">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-envelope"></i> Email</h5>
+                                <p class="card-text">Você pode me enviar um e-mail para qualquer dúvida ou proposta.</p>
+                                <a href="mailto:nicolas@example.com" class="btn btn-primary">Enviar E-mail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4" data-aos="fade-up">
+                        <div class="card text-center p-4 mb-4 shadow-lg">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-github"></i> GitHub</h5>
+                                <p class="card-text">Confira meus projetos e contribuições no GitHub.</p>
+                                <a href="https://github.com/nicolas" target="_blank" class="btn btn-dark">Visitar GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4" data-aos="fade-up">
+                        <div class="card text-center p-4 mb-4 shadow-lg">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-telephone"></i> Telefone</h5>
+                                <p class="card-text">Entre em contato comigo por telefone para uma conversa mais direta.</p>
+                                <a href="tel:+55XXXXXXXXXXX" class="btn btn-success">Ligar Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+           
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
 </body>
 </html>
